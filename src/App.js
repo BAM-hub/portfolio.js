@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import About from "./components/About";
+import NavBar from './components/NavBar';
 
-function App() {
+
+const App = () => {
+  const [color, setColor] = useState('#55EFC4');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar 
+        color={color}
+      />
+      <About 
+        color={color}
+        setColor={setColor}
+      />
     </div>
   );
 }
