@@ -3,9 +3,11 @@ import styled from "styled-components";
 export const AboutContainer = styled.div.attrs(props =>({
   color: props.color || 'white'
 }))`
+  grid-row: span 2;
+  border-top: 1px solid black;
   background: ${props=> props.color};
   transition: background 200ms ease-in;
-  width: 30vw;
+  /* width: 30vw; */
   height: 94vh;
   display: flex;
   flex-direction: column;
@@ -13,7 +15,9 @@ export const AboutContainer = styled.div.attrs(props =>({
   justify-content: space-between;
   padding: 3rem;
   position: relative;
-  overflow: hidden;
+  position: sticky;
+  top: 6vh;
+  left: 0;
 `;
 
 export const ColorChange = styled.div`
