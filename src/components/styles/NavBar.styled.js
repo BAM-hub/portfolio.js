@@ -13,6 +13,7 @@ export const NavBarContainer = styled.div.attrs(props => ({
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 1;
 `;
 
 export const Logo = styled.div`
