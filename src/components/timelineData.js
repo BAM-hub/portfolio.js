@@ -115,3 +115,21 @@ export const TIMELINE_DATA = [
     }
   }
 ]
+export const SKILL_DATA = [
+  {
+    skillName: 'javaScript',
+    percentage: 95
+  },
+  {
+    skillName: 'CSS - HTML',
+    percentage: 85
+  },
+  {
+    skillName: 'Java',
+    percentage: 80
+  },
+  {
+    skillName: 'php',
+    percentage: 75
+  }
+];
