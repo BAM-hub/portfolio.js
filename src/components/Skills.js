@@ -6,12 +6,14 @@ import {
   Percentage,
   SkillNameContainer,
   Divider,
-  SkillSectionContainer
+  SkillSectionContainer,
+  FremworksContainer,
+  Freamwork
 } from './styles/Skills.styled';
-import { AccentPointer, PrimaryText } from './styles/Text.styled';
+import { AccentPointer, PrimaryText, SecondaryText } from './styles/Text.styled';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { SKILL_DATA } from './timelineData';
+import { SKILL_DATA, FREAMWORK_DATA } from './timelineData';
 
 const Skills = ({ theme, color }) => {
   const [isOpen, setIsOpen] = useState({
@@ -65,12 +67,38 @@ const Skills = ({ theme, color }) => {
       <SkillSectionContainer>
         <Divider
           theme={theme}
+          onClick={() => setIsOpen({
+            ...isOpen,
+            librariesFreamworks: !isOpen.librariesFreamworks
+          })}
         >
           <PrimaryText>
             Libraries | Freamworks
           </PrimaryText>
         </Divider>
-        
+        <FremworksContainer 
+          as={motion.div} 
+          layout
+          transition={{layout:{duration: .4, type: "spring"}}}
+        >
+          {
+            isOpen.librariesFreamworks &&
+            FREAMWORK_DATA.map((data, i) => (
+              <Freamwork 
+                key={i}
+                as={motion.div}
+                layout
+                initial={{ opacity: 0 }}
+                animate={{ opacity: .99 }}
+                transition={{ duration: .3 }}
+              >
+                <SecondaryText>{data.type}</SecondaryText>
+                <PrimaryText>{data.name}</PrimaryText>
+            </Freamwork>
+            ))
+          }
+        </FremworksContainer>
+
       </SkillSectionContainer>
 
     </SkillsContainer>

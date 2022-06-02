@@ -2,12 +2,11 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const SkillsContainer = styled.div`
-  height: 94vh;
+  height: 108vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  border: 1px solid white;
 `;
 
 export const SkillSectionContainer = styled.div`
@@ -91,5 +90,60 @@ export const Divider = styled.div.attrs(props => ({
     cursor: pointer;
     border: 1px solid black;
     padding: .2rem;
+  }
+`;
+
+
+export const FremworksContainer = styled(motion.div).attrs(props => ({
+  hight: props.hight || 0
+}))`
+  max-height: 94%;
+  width: 80%;
+  background: white;
+  opacity: 0.99;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  padding: .2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  ::-webkit-scrollbar {
+    background: black;
+    opacity: 0.99;
+    border-radius: .4rem;
+    width: 0.4rem;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: .4rem;
+    background: grey;
+    opacity: .7;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: .4rem;
+    background-color: black;
+  }
+
+`;
+
+export const Freamwork = styled(motion.div)`
+  width: 10rem;
+  height: 4rem;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.2rem;
+  border: 1px solid black;
+  opacity: 0.99;
+  background: black;
+  > p {
+    color: white;
+    font-size: .9rem;
+  }
+  > p:nth-child(1) {
+    opacity: .7;
   }
 `;
