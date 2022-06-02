@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AboutContainer = styled.div.attrs(props =>({
   color: props.color || 'white'
 }))`
-  grid-row: span 2;
+  grid-row: span 4;
   border-top: 1px solid black;
   background: ${props=> props.color};
   transition: background 200ms ease-in;
