@@ -83,7 +83,7 @@ const Timeline = ({ color, theme }) => {
               animate={{ opacity: .7 }}
               transition={{ duration: .2 }}
               theme={theme}
-              >{selectedData.data.projects[skill].description}</MotionSecondaryText>
+              >{selectedData.data.projects[skill]?.description}</MotionSecondaryText>
             <MotionPrimaryText
               as={motion.p}
               layout
