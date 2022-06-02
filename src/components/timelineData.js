@@ -133,3 +133,86 @@ export const SKILL_DATA = [
     percentage: 75
   }
 ];
+
+export const FREAMWORK_DATA = [
+  {
+    type: 'Frontend',
+    name: 'React'
+  },
+  {
+    type: 'Frontend',
+    name: 'React Native'
+  },
+  {
+    type: 'Frontend',
+    name: 'Redux'
+  },
+  {
+    type: 'Frontend',
+    name: 'React Hooks'
+  },
+  {
+    type: 'Frontend',
+    name: 'URQL'
+  },
+  {
+    type: 'Frontend',
+    name: 'Axios - Fetch'
+  },
+  {
+    type: 'Frontend',
+    name: 'Framer Motion'
+  },
+  {
+    type: 'Frontend',
+    name: 'Styled component'
+  },
+  {
+    type: 'Backend',
+    name: 'node.js'
+  },
+  {
+    type: 'Backend',
+    name: 'Express.js'
+  },
+  {
+    type: 'Backend',
+    name: 'GraphQL'
+  },
+  {
+    type: 'Backend',
+    name: 'Socket.io - HTTP 1.1'
+  },
+  {
+    type: 'Backend',
+    name: 'Mongoose'
+  },
+  {
+    type: 'Database',
+    name: 'Oracle'
+  },
+  {
+    type: 'Database',
+    name: 'PostgreSQL'
+  },
+  {
+    type: 'Database',
+    name: 'MongoDB - Atlas'
+  },
+  {
+    type: 'Tool',
+    name: 'Figgma'
+  },
+  {
+    type: 'Tool',
+    name: 'Postman'
+  },
+  {
+    type: 'Communication',
+    name: 'Arabic'
+  },
+  {
+    type: 'Communication',
+    name: 'English'
+  },
+]
