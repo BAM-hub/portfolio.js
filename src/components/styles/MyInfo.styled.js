@@ -6,7 +6,6 @@ export const MyInfoContainer = styled.div`
   padding: 4rem;
   flex-direction: column;
   justify-content: center;
-  /* gap: rem; */
 `;
 
 export const TextContainer = styled.div`
