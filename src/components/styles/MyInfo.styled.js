@@ -15,8 +15,3 @@ export const TextContainer = styled.div`
   justify-content: center;
   padding: 0.2rem;
 `;
-
-// export const SVGContainer = styled.img`
-//   width: 40vw;
-//   /* height: 94vh; */
-// `;
