@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.div.attrs(props =>({
-  color: props.color || 'white'
+export const AboutContainer = styled.div.attrs((props) => ({
+  color: props.color || "white",
 }))`
   grid-row: span 4;
   border-top: 1px solid black;
-  background: ${props=> props.color};
-  transition: background 200ms ease-in;
+  background: ${(props) => props.color};
+  transition: background-color 200ms ease-in;
   /* width: 30vw; */
   height: 94vh;
   display: flex;
@@ -38,10 +38,10 @@ export const ColorChange = styled.div`
     cursor: pointer;
     transform: translateX(-2.1rem);
     transition: 100ms ease-in;
-    
-    ::after{
+
+    ::after {
       transform: 100ms ease-in;
-      content: '';
+      content: "";
       width: 2.1rem;
       height: 1.8rem;
       top: 0rem;
@@ -67,13 +67,13 @@ export const ColorPalette = styled.div`
   }
 `;
 
-export const Color = styled.div.attrs(props => ({
-  color: props.color
+export const Color = styled.div.attrs((props) => ({
+  color: props.color,
 }))`
   width: 5vw;
   height: 5vw;
-  background: ${props => props.color};
-  
+  background: ${(props) => props.color};
+
   :hover {
     border: 1px solid white;
   }
@@ -95,7 +95,7 @@ export const HorizontalList = styled.ul`
   display: flex;
   width: 80%;
   justify-content: space-around;
-  > :hover{
+  > :hover {
     cursor: pointer;
   }
 `;
