@@ -5,7 +5,7 @@ import MyInfo from "./components/MyInfo";
 import NavBar from "./components/NavBar";
 import Timeline from "./components/Timeline";
 import { Layout } from "./components/styles/Layout.styled";
-import Skills from "./components/Skills";
+import Skills from "./components/skills/Skills";
 import Projects from "./components/Projects";
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
       <About color={color} setColor={setColor} />
       <MyInfo theme={theme} />
       <Timeline color={color} theme={theme} />
-      {/* <Skills color={color} theme={theme} /> */}
+      <Skills color={color} theme={theme} />
       {/* <Projects color={color} theme={theme} /> */}
     </Layout>
   );
