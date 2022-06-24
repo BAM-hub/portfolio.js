@@ -6,7 +6,6 @@ import {
   AccentPointer,
   SecondaryText,
 } from "./styles/Text.styled";
-import { TIMELINE_DATA } from "./timelineData";
 import { motion } from "framer-motion";
 import {
   DateContainer,
@@ -17,6 +16,7 @@ import {
   SkillTitle,
   ShowLessButton,
 } from "./styles/Timeline.styled";
+import { TIMELINE_DATA } from "./data/timelineData";
 
 const Timeline = ({ color, theme }) => {
   const [selectedData, setData] = useState(TIMELINE_DATA[1]);

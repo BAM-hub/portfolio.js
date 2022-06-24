@@ -11,7 +11,7 @@ import {
 } from "./styles/Project.styled";
 import { DownOutlined } from "@ant-design/icons";
 import { motion } from "framer-motion";
-import { PROJECTS_DATA } from "./projectsData";
+import { PROJECTS_DATA } from "./data/projectsData";
 import { AccentPointer, PrimaryText } from "./styles/Text.styled";
 import { useState } from "react";
 
